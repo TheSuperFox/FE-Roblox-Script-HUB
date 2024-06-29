@@ -1,162 +1,262 @@
--- Instances: 22 | Scripts: 3 | Modules: 0
 local G2L = {};
 
--- StarterGui.StepkaHUB
+-- StarterGui.WhatHUB
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["Name"] = [[StepkaHUB]];
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["Name"] = [[WhatHUB]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
--- StarterGui.StepkaHUB.ImageButton
-G2L["2"] = Instance.new("ImageButton", G2L["1"]);
+-- StarterGui.WhatHUB.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["Visible"] = false;
 G2L["2"]["BorderSizePixel"] = 0;
-G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2"]["Image"] = [[rbxassetid://2872617347]];
-G2L["2"]["Size"] = UDim2.new(0, 64, 0, 60);
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Size"] = UDim2.new(0, 767, 0, 354);
+G2L["2"]["Position"] = UDim2.new(0.19372, 0, 0.2782, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Position"] = UDim2.new(0.01496, 0, 0.89474, 0);
+G2L["2"]["BackgroundTransparency"] = 0.5;
 
--- StarterGui.StepkaHUB.ImageButton.UICorner
+-- StarterGui.WhatHUB.Frame.UICorner
 G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["CornerRadius"] = UDim.new(0, 10);
 
-
--- StarterGui.StepkaHUB.Frame
-G2L["4"] = Instance.new("Frame", G2L["1"]);
-G2L["4"]["Visible"] = false;
+-- StarterGui.WhatHUB.Frame.Script1SERVERSIDED
+G2L["4"] = Instance.new("TextButton", G2L["2"]);
 G2L["4"]["BorderSizePixel"] = 0;
-G2L["4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4"]["Size"] = UDim2.new(0, 542, 0, 293);
-G2L["4"]["Position"] = UDim2.new(0.26028, 0, 0.32456, 0);
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4"]["Size"] = UDim2.new(0, 245, 0, 26);
+G2L["4"]["Name"] = [[Script1SERVERSIDED]];
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4"]["BackgroundTransparency"] = 0.5;
+G2L["4"]["Text"] = [[FE Gale Fighter]];
+G2L["4"]["Position"] = UDim2.new(0.03651, 0, 0.16102, 0);
 
--- StarterGui.StepkaHUB.Frame.UICorner
+-- StarterGui.WhatHUB.Frame.Script1SERVERSIDED.UICorner
 G2L["5"] = Instance.new("UICorner", G2L["4"]);
 
 
--- StarterGui.StepkaHUB.Frame.TextLabel
-G2L["6"] = Instance.new("TextLabel", G2L["4"]);
-G2L["6"]["BorderSizePixel"] = 0;
-G2L["6"]["BackgroundColor3"] = Color3.fromRGB(181, 0, 0);
-G2L["6"]["TextSize"] = 14;
-G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6"]["BackgroundTransparency"] = 0.5;
-G2L["6"]["Size"] = UDim2.new(0, 542, 0, 30);
-G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6"]["Text"] = [[Stepka Script Hub]];
-
--- StarterGui.StepkaHUB.Frame.TextLabel.UICorner
-G2L["7"] = Instance.new("UICorner", G2L["6"]);
+-- StarterGui.WhatHUB.Frame.Script1SERVERSIDED.LocalScript
+G2L["6"] = Instance.new("LocalScript", G2L["4"]);
 
 
--- StarterGui.StepkaHUB.Frame.TextLabel
-G2L["8"] = Instance.new("TextLabel", G2L["4"]);
-G2L["8"]["BorderSizePixel"] = 0;
-G2L["8"]["BackgroundColor3"] = Color3.fromRGB(168, 37, 37);
-G2L["8"]["TextSize"] = 14;
-G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8"]["BackgroundTransparency"] = 0.5;
-G2L["8"]["Size"] = UDim2.new(0, 85, 0, 25);
-G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["Text"] = [[FE Gale Fighter]];
-G2L["8"]["Position"] = UDim2.new(0.06919, 0, 0.84812, 0);
+-- StarterGui.WhatHUB.Frame.Script2SPEEDCHANGER
+G2L["7"] = Instance.new("TextButton", G2L["2"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["7"]["Size"] = UDim2.new(0, 245, 0, 26);
+G2L["7"]["Name"] = [[Script2SPEEDCHANGER]];
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[Speed Changer GUI]];
+G2L["7"]["Position"] = UDim2.new(0.03651, 0, 0.27966, 0);
 
--- StarterGui.StepkaHUB.Frame.TextLabel.UICorner
-G2L["9"] = Instance.new("UICorner", G2L["8"]);
+-- StarterGui.WhatHUB.Frame.Script2SPEEDCHANGER.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["7"]);
 
 
--- StarterGui.StepkaHUB.Frame.ImageLabel
-G2L["a"] = Instance.new("ImageLabel", G2L["4"]);
+-- StarterGui.WhatHUB.Frame.Script2SPEEDCHANGER.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["7"]);
+
+
+-- StarterGui.WhatHUB.Frame.Title
+G2L["a"] = Instance.new("TextLabel", G2L["2"]);
 G2L["a"]["BorderSizePixel"] = 0;
-G2L["a"]["BackgroundColor3"] = Color3.fromRGB(0, 161, 164);
-G2L["a"]["Image"] = [[rbxassetid://4998267428]];
-G2L["a"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Size"] = UDim2.new(0, 104, 0, 28);
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Position"] = UDim2.new(0.05535, 0, 0.30717, 0);
+G2L["a"]["Text"] = [[What Script]];
+G2L["a"]["Name"] = [[Title]];
+G2L["a"]["Position"] = UDim2.new(0.02423, 0, 0.03148, 0);
 
--- StarterGui.StepkaHUB.Frame.ImageLabel.UICorner
-G2L["b"] = Instance.new("UICorner", G2L["a"]);
+-- StarterGui.WhatHUB.Frame.OpenMusic
+G2L["b"] = Instance.new("TextButton", G2L["2"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0, 81, 0, 23);
+G2L["b"]["BackgroundTransparency"] = 1;
+G2L["b"]["Name"] = [[OpenMusic]];
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Music Player]];
+G2L["b"]["Position"] = UDim2.new(0.03812, 0, 0.38176, 0);
 
-
--- StarterGui.StepkaHUB.Frame.TextButton
-G2L["c"] = Instance.new("TextButton", G2L["4"]);
+-- StarterGui.WhatHUB.ImageButton
+G2L["c"] = Instance.new("ImageButton", G2L["1"]);
 G2L["c"]["BorderSizePixel"] = 0;
-G2L["c"]["TextSize"] = 14;
-G2L["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c"]["Size"] = UDim2.new(0, 85, 0, 31);
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Image"] = [[http://www.roblox.com/asset/?id=18258726551]];
+G2L["c"]["Size"] = UDim2.new(0, 75, 0, 77);
 G2L["c"]["BackgroundTransparency"] = 0.5;
 G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c"]["Text"] = [[EXECUTE]];
-G2L["c"]["Position"] = UDim2.new(0.06827, 0, 0.71331, 0);
+G2L["c"]["Position"] = UDim2.new(0.01197, 0, 0.88847, 0);
 
--- StarterGui.StepkaHUB.Frame.TextButton.UICorner
+-- StarterGui.WhatHUB.ImageButton.UICorner
 G2L["d"] = Instance.new("UICorner", G2L["c"]);
 
 
--- StarterGui.StepkaHUB.Frame.TextButton.LocalScript
-G2L["e"] = Instance.new("LocalScript", G2L["c"]);
+-- StarterGui.WhatHUB.SecretFrame
+G2L["e"] = Instance.new("Frame", G2L["1"]);
+G2L["e"]["Visible"] = false;
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Size"] = UDim2.new(0, 763, 0, 100);
+G2L["e"]["Position"] = UDim2.new(0.19671, 0, 0.15288, 0);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Name"] = [[SecretFrame]];
+G2L["e"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.WhatHUB.SecretFrame.UICorner
+G2L["f"] = Instance.new("UICorner", G2L["e"]);
 
 
--- StarterGui.StepkaHUB.Frame.TextButton
-G2L["f"] = Instance.new("TextButton", G2L["4"]);
-G2L["f"]["BorderSizePixel"] = 0;
-G2L["f"]["TextSize"] = 14;
-G2L["f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f"]["Size"] = UDim2.new(0, 85, 0, 31);
-G2L["f"]["BackgroundTransparency"] = 0.5;
-G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["Text"] = [[EXECUTE]];
-G2L["f"]["Position"] = UDim2.new(0.30996, 0, 0.71331, 0);
+-- StarterGui.WhatHUB.SecretFrame.ImageLabel
+G2L["10"] = Instance.new("ImageLabel", G2L["e"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["Image"] = [[rbxassetid://18194779368]];
+G2L["10"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["BackgroundTransparency"] = 1;
 
--- StarterGui.StepkaHUB.Frame.TextButton.UICorner
-G2L["10"] = Instance.new("UICorner", G2L["f"]);
+-- StarterGui.WhatHUB.SecretFrame.Relax1
+G2L["11"] = Instance.new("TextButton", G2L["e"]);
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["11"]["Size"] = UDim2.new(0, 102, 0, 22);
+G2L["11"]["BackgroundTransparency"] = 0.3;
+G2L["11"]["Name"] = [[Relax1]];
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[Relaxing Music]];
+G2L["11"]["Position"] = UDim2.new(0.13106, 0, 0.25, 0);
 
-
--- StarterGui.StepkaHUB.Frame.TextButton.LocalScript
-G2L["11"] = Instance.new("LocalScript", G2L["f"]);
-
-
--- StarterGui.StepkaHUB.Frame.TextLabel
-G2L["12"] = Instance.new("TextLabel", G2L["4"]);
-G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(168, 37, 37);
-G2L["12"]["TextSize"] = 14;
-G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["BackgroundTransparency"] = 0.5;
-G2L["12"]["Size"] = UDim2.new(0, 85, 0, 25);
-G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Text"] = [[Speed Changer GUI]];
-G2L["12"]["Position"] = UDim2.new(0.30904, 0, 0.84812, 0);
-
--- StarterGui.StepkaHUB.Frame.TextLabel.UICorner
-G2L["13"] = Instance.new("UICorner", G2L["12"]);
+-- StarterGui.WhatHUB.SecretFrame.Relax1.UICorner
+G2L["12"] = Instance.new("UICorner", G2L["11"]);
 
 
--- StarterGui.StepkaHUB.Frame.ImageLabel
-G2L["14"] = Instance.new("ImageLabel", G2L["4"]);
-G2L["14"]["BorderSizePixel"] = 0;
-G2L["14"]["BackgroundColor3"] = Color3.fromRGB(0, 161, 164);
-G2L["14"]["Image"] = [[rbxassetid://4998267428]];
-G2L["14"]["Size"] = UDim2.new(0, 100, 0, 100);
+-- StarterGui.WhatHUB.SecretFrame.Relax1.PlayMusicOnClick
+G2L["13"] = Instance.new("LocalScript", G2L["11"]);
+G2L["13"]["Name"] = [[PlayMusicOnClick]];
+
+-- StarterGui.WhatHUB.SecretFrame.Relax2
+G2L["14"] = Instance.new("TextButton", G2L["e"]);
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["14"]["Size"] = UDim2.new(0, 102, 0, 22);
+G2L["14"]["BackgroundTransparency"] = 0.3;
+G2L["14"]["Name"] = [[Relax2]];
 G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14"]["Position"] = UDim2.new(0.29705, 0, 0.30717, 0);
+G2L["14"]["Text"] = [[Relaxing Music 2]];
+G2L["14"]["Position"] = UDim2.new(0.13106, 0, 0.59, 0);
 
--- StarterGui.StepkaHUB.Frame.ImageLabel.UICorner
+-- StarterGui.WhatHUB.SecretFrame.Relax2.UICorner
 G2L["15"] = Instance.new("UICorner", G2L["14"]);
 
 
--- StarterGui.StepkaHUB.LocalScript
-G2L["16"] = Instance.new("LocalScript", G2L["1"]);
+-- StarterGui.WhatHUB.SecretFrame.Relax2.PlayMusicOnClick
+G2L["16"] = Instance.new("LocalScript", G2L["14"]);
+G2L["16"]["Name"] = [[PlayMusicOnClick]];
+
+-- StarterGui.WhatHUB.SecretFrame.TextBox
+G2L["17"] = Instance.new("TextBox", G2L["e"]);
+G2L["17"]["CursorPosition"] = -1;
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["17"]["PlaceholderText"] = [[Enter Music ID...]];
+G2L["17"]["Size"] = UDim2.new(0, 229, 0, 25);
+G2L["17"]["Position"] = UDim2.new(0.36828, 0, 0.25, 0);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[]];
+G2L["17"]["BackgroundTransparency"] = 0.3;
+
+-- StarterGui.WhatHUB.SecretFrame.TextBox.UICorner
+G2L["18"] = Instance.new("UICorner", G2L["17"]);
 
 
--- StarterGui.StepkaHUB.Frame.TextButton.LocalScript
-local function C_e()
-local script = G2L["e"];
+-- StarterGui.WhatHUB.SecretFrame.Play
+G2L["19"] = Instance.new("TextButton", G2L["e"]);
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["19"]["Size"] = UDim2.new(0, 102, 0, 22);
+G2L["19"]["BackgroundTransparency"] = 0.3;
+G2L["19"]["Name"] = [[Play]];
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[Play]];
+G2L["19"]["Position"] = UDim2.new(0.37746, 0, 0.59, 0);
+
+-- StarterGui.WhatHUB.SecretFrame.Play.UICorner
+G2L["1a"] = Instance.new("UICorner", G2L["19"]);
+
+
+-- StarterGui.WhatHUB.SecretFrame.Play.PlayMusicScript
+G2L["1b"] = Instance.new("LocalScript", G2L["19"]);
+G2L["1b"]["Name"] = [[PlayMusicScript]];
+
+-- StarterGui.WhatHUB.SecretFrame.Stop
+G2L["1c"] = Instance.new("TextButton", G2L["e"]);
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1c"]["Size"] = UDim2.new(0, 102, 0, 22);
+G2L["1c"]["BackgroundTransparency"] = 0.3;
+G2L["1c"]["Name"] = [[Stop]];
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[Stop]];
+G2L["1c"]["Position"] = UDim2.new(0.53473, 0, 0.59, 0);
+
+-- StarterGui.WhatHUB.SecretFrame.Stop.UICorner
+G2L["1d"] = Instance.new("UICorner", G2L["1c"]);
+
+
+-- StarterGui.WhatHUB.SecretFrame.Stop.StopSoundOnClick
+G2L["1e"] = Instance.new("LocalScript", G2L["1c"]);
+G2L["1e"]["Name"] = [[StopSoundOnClick]];
+
+-- StarterGui.WhatHUB.SecretFrame.TextLabel
+G2L["1f"] = Instance.new("TextLabel", G2L["e"]);
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["BackgroundTransparency"] = 1;
+G2L["1f"]["Size"] = UDim2.new(0, 200, 0, 25);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Text"] = [[NOT FE]];
+G2L["1f"]["Position"] = UDim2.new(0.67386, 0, 0.16667, 0);
+
+-- StarterGui.WhatHUB.LocalScript
+G2L["20"] = Instance.new("LocalScript", G2L["1"]);
+
+
+-- StarterGui.WhatHUB.LocalScript
+G2L["21"] = Instance.new("LocalScript", G2L["1"]);
+
+
+-- StarterGui.WhatHUB.Frame.Script1SERVERSIDED.LocalScript
+local function C_6()
+local script = G2L["6"];
 	script.Parent.MouseButton1Click:Connect(function()
 		--[[
 	made by sammyc and loadlua
@@ -2813,11 +2913,11 @@ local script = G2L["e"];
 				attack = false
 				con5:disconnect()
 			end
-	
-	
-	
+
+
+
 			function attackfour()
-	
+
 				attack = true
 				so("http://www.roblox.com/asset/?id=1452040709", RightLeg, 3, 1)
 				WaveEffect(BrickColor.new("White"), root.CFrame * CFrame.new(0, -1, 0) * euler(0, math.random(-50, 50), 0), 1, 1, 1, 1, 0.5, 1, 0.05)
@@ -2838,9 +2938,9 @@ local script = G2L["e"];
 				velo.maxForce=Vector3.new(math.huge, math.huge, math.huge)
 				velo.Parent=root
 				game:GetService("Debris"):AddItem(velo,0.7)
-	
-	
-	
+
+
+
 				con5=hum.Touched:connect(function(hit)
 					if hit.Parent:FindFirstChildOfClass("Humanoid") ~= nil then
 						if attackdebounce == false then
@@ -2855,23 +2955,23 @@ local script = G2L["e"];
 							RingEffect(BrickColor.new("White"),rl.CFrame*angles(math.random(-360,360),math.random(-360,360),math.random(-360,360)),1,5,1,.2,2,.2,0.06)
 							RingEffect(BrickColor.new("White"),rl.CFrame*angles(math.random(-360,360),math.random(-360,360),math.random(-360,360)),1,5,1,.2,2,.2,0.06)
 							SphereEffect(BrickColor.new("White"),rl.CFrame*angles(math.random(-360,360),math.random(-360,360),math.random(-360,360)),1,5,1,3,3,3,0.06)
-	
-	
-	
+
+
+
 							coroutine.resume(coroutine.create(function()
 								for i = 0,1,0.1 do
 									swait()
 									hum.CameraOffset = hum.CameraOffset:lerp(Vector3.new(math.random(-0.75*1.8,0.75*1.8),math.random(-0.75*1.8,0.75*1.8),math.random(-0.75*1.8,0.75*1.8)),0.44)
 								end
 							end))
-	
-	
+
+
 							wait(0.14)
 							attackdebounce = false
 						end
 					end
 				end)
-	
+
 				for i = 0, 5.11, 0.15 do
 					swait()
 					BlockEffect(BrickColor.new("White"), rl.CFrame*CF(0,-1,0), 2, 2, 2, 3.5, 3.5, 3.5, 0.05)
@@ -2882,33 +2982,33 @@ local script = G2L["e"];
 					RH.C0 = clerp(RH.C0, CFrame.new(1, -0.5, 0) * RHCF * angles(math.rad(0), math.rad(0), math.rad(20+10*i)), 0.42)
 					LH.C0 = clerp(LH.C0, CFrame.new(-1, -0.5, -0.4) * LHCF * angles(math.rad(0), math.rad(0), math.rad(24)), 0.42)
 				end
-	
-	
+
+
 				attack = false
 				con5:disconnect()
 			end
-	
-	
-	
-	
-	
+
+
+
+
+
 			local cooldown = false
 			function quickkick()
 				attack = true
-	
-	
+
+
 				con5=hum.Touched:connect(function(hit)
 					if hit.Parent:FindFirstChildOfClass("Humanoid") ~= nil then
 						if attackdebounce == false then
 							attackdebounce = true
-	
+
 							coroutine.resume(coroutine.create(function()
 								for i = 0,1.5,0.1 do
 									swait()
 									hit.Parent.Head.CFrame = root.CFrame * CFrame.new(0,1.3,-1.8)
 								end
 							end))
-	
+
 							so("http://roblox.com/asset/?id=636494529",rl,2,1)
 							RingEffect(BrickColor.new("White"),rl.CFrame*angles(math.random(-360,360),math.random(-360,360),math.random(-360,360)),1,5,1,.2,2,.2,0.06)
 							RingEffect(BrickColor.new("White"),rl.CFrame*angles(math.random(-360,360),math.random(-360,360),math.random(-360,360)),1,5,1,.2,2,.2,0.06)
@@ -3842,23 +3942,22 @@ local script = G2L["e"];
 		LoadAllAnimations()
 	end)
 end;
-task.spawn(C_e);
--- StarterGui.StepkaHUB.Frame.TextButton.LocalScript
-local function C_11()
-	local script = G2L["11"];
+task.spawn(C_6);
+-- StarterGui.WhatHUB.Frame.Script2SPEEDCHANGER.LocalScript
+local function C_9()
+	local script = G2L["9"];
 	script.Parent.MouseButton1Click:Connect(function()
-	--[=[
-	--[=[
-		██████╗░██╗░░░██╗  ███╗░░░███╗██████╗░░██╗░░░░░░░██╗░█████╗░████████╗░█████╗░
-		██╔══██╗╚██╗░██╔╝  ████╗░████║██╔══██╗░██║░░██╗░░██║██╔══██╗╚══██╔══╝██╔══██╗
-		██████╦╝░╚████╔╝░  ██╔████╔██║██████╔╝░╚██╗████╗██╔╝███████║░░░██║░░░██║░░██║
-		██╔══██╗░░╚██╔╝░░  ██║╚██╔╝██║██╔══██╗░░████╔═████║░██╔══██║░░░██║░░░██║░░██║
-		██████╦╝░░░██║░░░  ██║░╚═╝░██║██║░░██║░░╚██╔╝░╚██╔╝░██║░░██║░░░██║░░░╚█████╔╝
-		╚═════╝░░░░╚═╝░░░  ╚═╝░░░░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░
+		--[=[
+	    ██████╗░██╗░░░██╗  ███╗░░░███╗██████╗░░██╗░░░░░░░██╗░█████╗░████████╗░█████╗░
+	    ██╔══██╗╚██╗░██╔╝  ████╗░████║██╔══██╗░██║░░██╗░░██║██╔══██╗╚══██╔══╝██╔══██╗
+	    ██████╦╝░╚████╔╝░  ██╔████╔██║██████╔╝░╚██╗████╗██╔╝███████║░░░██║░░░██║░░██║
+	    ██╔══██╗░░╚██╔╝░░  ██║╚██╔╝██║██╔══██╗░░████╔═████║░██╔══██║░░░██║░░░██║░░██║
+	    ██████╦╝░░░██║░░░  ██║░╚═╝░██║██║░░██║░░╚██╔╝░╚██╔╝░██║░░██║░░░██║░░░╚█████╔╝
+	    ╚═════╝░░░░╚═╝░░░  ╚═╝░░░░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░
 	
-		▀█▀ █░█ ▄▀█ █▄░█ █▄▀ █▀   █▀▀ █▀█ █▀█   █▀▀ ▀▄▀ █▀▀ █▀▀ █░█ ▀█▀ █ █▄░█ █▀▀   █▀ █▀▀ █▀█ █ █▀█ ▀█▀
-		░█░ █▀█ █▀█ █░▀█ █░█ ▄█   █▀░ █▄█ █▀▄   ██▄ █░█ ██▄ █▄▄ █▄█ ░█░ █ █░▀█ █▄█   ▄█ █▄▄ █▀▄ █ █▀▀ ░█░
-		]=]
+	▀█▀ █░█ ▄▀█ █▄░█ █▄▀ █▀   █▀▀ █▀█ █▀█   █▀▀ ▀▄▀ █▀▀ █▀▀ █░█ ▀█▀ █ █▄░█ █▀▀
+	░█░ █▀█ █▀█ █░▀█ █░█ ▄█   █▀░ █▄█ █▀▄   ██▄ █░█ ██▄ █▄▄ █▄█ ░█░ █ █░▀█ █▄█
+	]=]
 
 		-- Instances: 34 | Scripts: 4 | Modules: 0
 		local G2L = {};
@@ -4193,356 +4292,118 @@ local function C_11()
 		task.spawn(C_22);
 
 		return G2L["1"], require;
-		]=]
+	end)
+end;
+task.spawn(C_9);
+-- StarterGui.WhatHUB.SecretFrame.Relax1.PlayMusicOnClick
+local function C_13()
+	local script = G2L["13"];
+	local textButton = script.Parent -- Reference to the TextButton instance
 
-		-- Instances: 34 | Scripts: 4 | Modules: 0
-local G2L = {};
+	-- Function to play music
+	local function playMusic()
+		local music = game.SoundService:FindFirstChild("Relaxed Scene")
+		if music and music:IsA("Sound") then -- Check if the music instance exists and is a Sound
+			music:Play() -- Play the music
+		else
+			warn("Music not found or is not a Sound instance.")
+		end
+	end
 
--- StarterGui.SpeedChangerGUI
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["IgnoreGuiInset"] = true;
-G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
-G2L["1"]["Name"] = [[SpeedChangerGUI]];
-G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+	-- Connect the function to the button's click event
+	textButton.MouseButton1Click:Connect(playMusic)
+end;
+task.spawn(C_13);
+-- StarterGui.WhatHUB.SecretFrame.Relax2.PlayMusicOnClick
+local function C_16()
+	local script = G2L["16"];
+	local textButton = script.Parent -- Reference to the TextButton instance
 
--- StarterGui.SpeedChangerGUI.Frame
-G2L["2"] = Instance.new("Frame", G2L["1"]);
-G2L["2"]["BorderSizePixel"] = 0;
-G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 133, 255);
-G2L["2"]["Size"] = UDim2.new(0, 296, 0, 125);
-G2L["2"]["Position"] = UDim2.new(0.0301, 0, 0.03383, 0);
-G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+	-- Function to play music
+	local function playMusic()
+		local music = game.SoundService:FindFirstChild("Relax")
+		if music and music:IsA("Sound") then -- Check if the music instance exists and is a Sound
+			music:Play() -- Play the music
+		else
+			warn("Music not found or is not a Sound instance.")
+		end
+	end
 
--- StarterGui.SpeedChangerGUI.Frame.UIGradient
-G2L["3"] = Instance.new("UIGradient", G2L["2"]);
-G2L["3"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.5),NumberSequenceKeypoint.new(1.000, 0.5)};
-G2L["3"]["Offset"] = Vector2.new(0, 9);
-G2L["3"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(4, 222, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(4, 222, 255))};
+	-- Connect the function to the button's click event
+	textButton.MouseButton1Click:Connect(playMusic)
+end;
+task.spawn(C_16);
+-- StarterGui.WhatHUB.SecretFrame.Play.PlayMusicScript
+local function C_1b()
+	local script = G2L["1b"];
+	local playButton = script.Parent -- Reference to the Play button
+	local musicTextBox = playButton.Parent:FindFirstChild("TextBox") -- Attempt to find the MusicTextBox in the same parent as the Play button
+	local soundService = game:GetService("SoundService") -- Reference to the SoundService where the sound will be played
 
--- StarterGui.SpeedChangerGUI.Frame.UICorner
-G2L["4"] = Instance.new("UICorner", G2L["2"]);
+	-- Function to play music
+	local function playMusic()
+		if musicTextBox and musicTextBox:IsA("TextBox") then -- Check if MusicTextBox exists and is a TextBox
+			local musicId = musicTextBox.Text -- Get the music ID from the TextBox
+			local success, result = pcall(function() return tonumber(musicId) end) -- Safely attempt to convert the music ID to a number
 
+			if success and result then -- If conversion is successful and result is not nil
+				local sound = Instance.new("Sound", soundService) -- Create a new Sound instance in the SoundService
+				sound.SoundId = "rbxassetid://" .. tostring(result) -- Set the SoundId to the music ID
+				sound:Play() -- Play the sound
+				sound.Ended:Connect(function() sound:Destroy() end) -- Destroy the sound instance once it has finished playing
+			else
+				warn("Invalid music ID") -- Warn if the music ID is not a valid number
+			end
+		else
+			warn("MusicTextBox not found or is not a TextBox") -- Warn if MusicTextBox does not exist or is not a TextBox
+		end
+	end
 
--- StarterGui.SpeedChangerGUI.Frame.Apply
-G2L["5"] = Instance.new("TextButton", G2L["2"]);
-G2L["5"]["BorderSizePixel"] = 0;
-G2L["5"]["TextSize"] = 14;
-G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5"]["BackgroundColor3"] = Color3.fromRGB(37, 8, 255);
-G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["5"]["Size"] = UDim2.new(0, 109, 0, 26);
-G2L["5"]["Name"] = [[Apply]];
-G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5"]["Text"] = [[Apply!]];
-G2L["5"]["Position"] = UDim2.new(0.14407, 0, 0.64688, 0);
+	playButton.MouseButton1Click:Connect(playMusic) -- Connect the playMusic function to the button's click event
+end;
+task.spawn(C_1b);
+-- StarterGui.WhatHUB.SecretFrame.Stop.StopSoundOnClick
+local function C_1e()
+	local script = G2L["1e"];
+	local button = script.Parent -- Reference to the button that was clicked
 
--- StarterGui.SpeedChangerGUI.Frame.Apply.UICorner
-G2L["6"] = Instance.new("UICorner", G2L["5"]);
+	-- Function to stop all sounds in the SoundService
+	local function stopAllSounds()
+		local soundService = game:GetService("SoundService")
+		for _, sound in soundService:GetChildren() do
+			if sound:IsA("Sound") then
+				sound:Stop()
+			end
+		end
+	end
 
-
--- StarterGui.SpeedChangerGUI.Frame.TextLabel
-G2L["7"] = Instance.new("TextLabel", G2L["2"]);
-G2L["7"]["BorderSizePixel"] = 0;
-G2L["7"]["BackgroundColor3"] = Color3.fromRGB(20, 83, 255);
-G2L["7"]["TextSize"] = 14;
-G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7"]["Size"] = UDim2.new(0, 313, 0, 26);
-G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Text"] = [[Speed Changer GUI]];
-G2L["7"]["Position"] = UDim2.new(-0.02692, 0, 0, 0);
-
--- StarterGui.SpeedChangerGUI.Frame.TextLabel.UICorner
-G2L["8"] = Instance.new("UICorner", G2L["7"]);
-
-
--- StarterGui.SpeedChangerGUI.Frame.Text
-G2L["9"] = Instance.new("TextBox", G2L["2"]);
-G2L["9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9"]["PlaceholderColor3"] = Color3.fromRGB(22, 0, 179);
-G2L["9"]["BorderSizePixel"] = 0;
-G2L["9"]["TextSize"] = 14;
-G2L["9"]["Name"] = [[Text]];
-G2L["9"]["BackgroundColor3"] = Color3.fromRGB(18, 141, 255);
-G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["9"]["PlaceholderText"] = [[Enter Speed Here...]];
-G2L["9"]["Size"] = UDim2.new(0, 141, 0, 34);
-G2L["9"]["Position"] = UDim2.new(0.09152, 0, 0.31097, 0);
-G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9"]["Text"] = [[]];
-
--- StarterGui.SpeedChangerGUI.Frame.Text.UICorner
-G2L["a"] = Instance.new("UICorner", G2L["9"]);
-
-
--- StarterGui.SpeedChangerGUI.Frame.TextButton
-G2L["b"] = Instance.new("TextButton", G2L["2"]);
-G2L["b"]["BorderSizePixel"] = 0;
-G2L["b"]["TextSize"] = 14;
-G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(0, 146, 255);
-G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b"]["Size"] = UDim2.new(0, 45, 0, 65);
-G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["Text"] = [[Credits]];
-G2L["b"]["Position"] = UDim2.new(0.64281, 0, 0.33148, 0);
-
--- StarterGui.SpeedChangerGUI.Frame.TextButton.UICorner
-G2L["c"] = Instance.new("UICorner", G2L["b"]);
-
-
--- StarterGui.SpeedChangerGUI.Frame.LocalScript
-G2L["d"] = Instance.new("LocalScript", G2L["2"]);
-
-
--- StarterGui.SpeedChangerGUI.Frame.Credits
-G2L["e"] = Instance.new("Frame", G2L["2"]);
-G2L["e"]["Visible"] = false;
-G2L["e"]["BorderSizePixel"] = 0;
-G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
-G2L["e"]["Size"] = UDim2.new(0, 296, 0, 66);
-G2L["e"]["Position"] = UDim2.new(0, 0, 1.13284, 0);
-G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Name"] = [[Credits]];
-
--- StarterGui.SpeedChangerGUI.Frame.Credits.UICorner
-G2L["f"] = Instance.new("UICorner", G2L["e"]);
-
-
--- StarterGui.SpeedChangerGUI.Frame.Credits.UIGradient
-G2L["10"] = Instance.new("UIGradient", G2L["e"]);
-G2L["10"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.5),NumberSequenceKeypoint.new(1.000, 0.5)};
-
--- StarterGui.SpeedChangerGUI.Frame.Credits.TextLabel
-G2L["11"] = Instance.new("TextLabel", G2L["e"]);
-G2L["11"]["BorderSizePixel"] = 0;
-G2L["11"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
-G2L["11"]["TextSize"] = 14;
-G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["Size"] = UDim2.new(0, 307, 0, 19);
-G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["Text"] = [[Credits]];
-G2L["11"]["Position"] = UDim2.new(-0.01689, 0, -0.13542, 0);
-
--- StarterGui.SpeedChangerGUI.Frame.Credits.TextLabel.UICorner
-G2L["12"] = Instance.new("UICorner", G2L["11"]);
-
-
--- StarterGui.SpeedChangerGUI.Frame.Credits.TextLabel
-G2L["13"] = Instance.new("TextLabel", G2L["e"]);
-G2L["13"]["BorderSizePixel"] = 0;
-G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13"]["TextSize"] = 14;
-G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13"]["BackgroundTransparency"] = 1;
-G2L["13"]["Size"] = UDim2.new(0, 200, 0, 20);
-G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["Text"] = [[Gui - MRwat0(Me)]];
-G2L["13"]["Position"] = UDim2.new(0.16216, 0, 0.23958, 0);
-
--- StarterGui.SpeedChangerGUI.Frame.Credits.TextLabel
-G2L["14"] = Instance.new("TextLabel", G2L["e"]);
-G2L["14"]["BorderSizePixel"] = 0;
-G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14"]["TextSize"] = 14;
-G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14"]["BackgroundTransparency"] = 1;
-G2L["14"]["Size"] = UDim2.new(0, 200, 0, 20);
-G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14"]["Text"] = [[Code - Roblox AI]];
-G2L["14"]["Position"] = UDim2.new(0.16216, 0, 0.52083, 0);
-
--- StarterGui.SpeedChangerGUI.Frame.Bonus
-G2L["15"] = Instance.new("TextButton", G2L["2"]);
-G2L["15"]["BorderSizePixel"] = 0;
-G2L["15"]["TextSize"] = 14;
-G2L["15"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["BackgroundColor3"] = Color3.fromRGB(0, 146, 255);
-G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["15"]["Size"] = UDim2.new(0, 45, 0, 65);
-G2L["15"]["Name"] = [[Bonus]];
-G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["Text"] = [[Bonus!]];
-G2L["15"]["Position"] = UDim2.new(0.82525, 0, 0.33148, 0);
-
--- StarterGui.SpeedChangerGUI.Frame.Bonus.UICorner
-G2L["16"] = Instance.new("UICorner", G2L["15"]);
-
-
--- StarterGui.SpeedChangerGUI.Frame.Music
-G2L["17"] = Instance.new("Frame", G2L["2"]);
-G2L["17"]["Visible"] = false;
-G2L["17"]["BorderSizePixel"] = 0;
-G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
-G2L["17"]["Size"] = UDim2.new(0, 296, 0, 84);
-G2L["17"]["Position"] = UDim2.new(0, 0, 1.75684, 0);
-G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17"]["Name"] = [[Music]];
-
--- StarterGui.SpeedChangerGUI.Frame.Music.UICorner
-G2L["18"] = Instance.new("UICorner", G2L["17"]);
-
-
--- StarterGui.SpeedChangerGUI.Frame.Music.UIGradient
-G2L["19"] = Instance.new("UIGradient", G2L["17"]);
-G2L["19"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.5),NumberSequenceKeypoint.new(1.000, 0.5)};
-
--- StarterGui.SpeedChangerGUI.Frame.Music.TextLabel
-G2L["1a"] = Instance.new("TextLabel", G2L["17"]);
-G2L["1a"]["BorderSizePixel"] = 0;
-G2L["1a"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
-G2L["1a"]["TextSize"] = 14;
-G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a"]["Size"] = UDim2.new(0, 307, 0, 19);
-G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a"]["Text"] = [[Music Player]];
-G2L["1a"]["Position"] = UDim2.new(-0.01689, 0, -0.13542, 0);
-
--- StarterGui.SpeedChangerGUI.Frame.Music.TextLabel.UICorner
-G2L["1b"] = Instance.new("UICorner", G2L["1a"]);
-
-
--- StarterGui.SpeedChangerGUI.Frame.Music.MusicID
-G2L["1c"] = Instance.new("TextBox", G2L["17"]);
-G2L["1c"]["CursorPosition"] = -1;
-G2L["1c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["PlaceholderColor3"] = Color3.fromRGB(136, 0, 0);
-G2L["1c"]["BorderSizePixel"] = 0;
-G2L["1c"]["TextSize"] = 14;
-G2L["1c"]["Name"] = [[MusicID]];
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(199, 0, 0);
-G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c"]["PlaceholderText"] = [[EnterMusic ID...]];
-G2L["1c"]["Size"] = UDim2.new(0, 200, 0, 31);
-G2L["1c"]["Position"] = UDim2.new(0.16216, 0, 0.20238, 0);
-G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["Text"] = [[]];
-
--- StarterGui.SpeedChangerGUI.Frame.Music.MusicID.UICorner
-G2L["1d"] = Instance.new("UICorner", G2L["1c"]);
-
-
--- StarterGui.SpeedChangerGUI.Frame.Music.Play
-G2L["1e"] = Instance.new("TextButton", G2L["17"]);
-G2L["1e"]["BorderSizePixel"] = 0;
-G2L["1e"]["TextSize"] = 14;
-G2L["1e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(199, 0, 0);
-G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1e"]["Size"] = UDim2.new(0, 189, 0, 19);
-G2L["1e"]["Name"] = [[Play]];
-G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["Text"] = [[Play]];
-G2L["1e"]["Position"] = UDim2.new(0.18581, 0, 0.66667, 0);
-
--- StarterGui.SpeedChangerGUI.Frame.Music.Play.UICorner
-G2L["1f"] = Instance.new("UICorner", G2L["1e"]);
-
-
--- StarterGui.SpeedChangerGUI.Frame.Music.MusicPlayerScript
-G2L["20"] = Instance.new("LocalScript", G2L["17"]);
-G2L["20"]["Name"] = [[MusicPlayerScript]];
-
--- StarterGui.SpeedChangerGUI.Frame.LocalScript
-G2L["21"] = Instance.new("LocalScript", G2L["2"]);
-
-
--- StarterGui.SpeedChangerGUI.SpeedChangerScript
-G2L["22"] = Instance.new("LocalScript", G2L["1"]);
-G2L["22"]["Name"] = [[SpeedChangerScript]];
-
--- StarterGui.SpeedChangerGUI.Frame.LocalScript
-local function C_d()
-	local script = G2L["d"];
+	-- Connect the button click event to the stopAllSounds function
+	button.MouseButton1Click:Connect(stopAllSounds)
+end;
+task.spawn(C_1e);
+-- StarterGui.WhatHUB.LocalScript
+local function C_20()
+	local script = G2L["20"];
 	local SGui = script.Parent
-	local Frame = SGui:WaitForChild("Credits")
-	local Button = SGui:WaitForChild("TextButton")
+	local Frame = SGui:WaitForChild("SecretFrame")
+	local Button = SGui.Frame:WaitForChild("OpenMusic")
 
 	Button.MouseButton1Up:Connect(function()
 		Frame.Visible = not Frame.Visible
 	end)
 end;
-task.spawn(C_d);
--- StarterGui.SpeedChangerGUI.Frame.Music.MusicPlayerScript
-local function C_20()
-	local script = G2L["20"];
-	local frame = script.Parent
-	local musicFrame = script.Parent -- Reference to the Music Frame
-	local musicIDBox = musicFrame:FindFirstChild("MusicID") -- Reference to the TextBox where the music ID is entered
-	local playButton = musicFrame:FindFirstChild("Play") -- Assuming there's a PlayButton in the Music Frame
-
-	-- Function to play music
-	local function playMusic()
-		local musicID = musicIDBox.Text -- Get the music ID from the TextBox
-		local MusicForIDK = Instance.new("Sound", frame) -- Create a new Sound instance in the workspace
-		MusicForIDK.SoundId = "rbxassetid://"..musicID -- Set the SoundId of the sound instance to the music ID entered
-		MusicForIDK:Play() -- Play the sound
-	end
-
-	-- Connect the playMusic function to the button's activation (click)
-	playButton.MouseButton1Click:Connect(playMusic)
-end;
 task.spawn(C_20);
--- StarterGui.SpeedChangerGUI.Frame.LocalScript
+-- StarterGui.WhatHUB.LocalScript
 local function C_21()
 	local script = G2L["21"];
 	local SGui = script.Parent
-	local Frame = SGui:WaitForChild("Music")
-	local Button = SGui:WaitForChild("Bonus")
+	local Frame = SGui:WaitForChild("Frame")
+	local Button = SGui:WaitForChild("ImageButton")
 
 	Button.MouseButton1Up:Connect(function()
 		Frame.Visible = not Frame.Visible
 	end)
 end;
 task.spawn(C_21);
--- StarterGui.SpeedChangerGUI.SpeedChangerScript
-local function C_22()
-	local script = G2L["22"];
-	-- SpeedChangerScript
-	local speedChangerGui = script.Parent
-	local textBox = speedChangerGui:FindFirstChild("Frame"):FindFirstChild("Text")
-	local applyButton = speedChangerGui:FindFirstChild("Frame"):FindFirstChild("Apply")
-
-	local function changePlayerSpeed(player, speed)
-		if player and player.Character and player.Character:FindFirstChild("Humanoid") then
-			player.Character.Humanoid.WalkSpeed = speed
-		end
-	end
-
-	applyButton.MouseButton1Click:Connect(function()
-		local speed = tonumber(textBox.Text)
-		if speed then
-			local player = game.Players.LocalPlayer
-			changePlayerSpeed(player, speed)
-		else
-			warn("Please enter a valid number for speed.")
-		end
-	end)
-end;
-task.spawn(C_22);
-
-return G2L["1"], require;
-end)
-end;
-task.spawn(C_11);
--- StarterGui.StepkaHUB.LocalScript
-local function C_16()
-	local script = G2L["16"];
-	local SGui = script.Parent
-	local Frame = SGui:WaitForChild("Frame")
-	local Button = SGui:WaitForChild("ImageButtonButton")
-
-	Button.MouseButton1Up:Connect(function()
-		Frame.Visible = not Frame.Visible
-	end)
-
-end;
-task.spawn(C_16);
 
 return G2L["1"], require;
