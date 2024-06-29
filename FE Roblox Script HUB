@@ -1,3 +1,13 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 27 | Scripts: 6 | Modules: 0
 local G2L = {};
 
 -- StarterGui.WhatHUB
@@ -97,10 +107,10 @@ G2L["c"] = Instance.new("ImageButton", G2L["1"]);
 G2L["c"]["BorderSizePixel"] = 0;
 G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["c"]["Image"] = [[http://www.roblox.com/asset/?id=18258726551]];
-G2L["c"]["Size"] = UDim2.new(0, 75, 0, 77);
+G2L["c"]["Size"] = UDim2.new(0, 42, 0, 40);
 G2L["c"]["BackgroundTransparency"] = 0.5;
 G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c"]["Position"] = UDim2.new(0.01197, 0, 0.88847, 0);
+G2L["c"]["Position"] = UDim2.new(0.01197, 0, 0.93484, 0);
 
 -- StarterGui.WhatHUB.ImageButton.UICorner
 G2L["d"] = Instance.new("UICorner", G2L["c"]);
@@ -130,128 +140,86 @@ G2L["10"]["Size"] = UDim2.new(0, 100, 0, 100);
 G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["10"]["BackgroundTransparency"] = 1;
 
--- StarterGui.WhatHUB.SecretFrame.Relax1
-G2L["11"] = Instance.new("TextButton", G2L["e"]);
-G2L["11"]["TextSize"] = 14;
+-- StarterGui.WhatHUB.SecretFrame.TextBox
+G2L["11"] = Instance.new("TextBox", G2L["e"]);
+G2L["11"]["CursorPosition"] = -1;
 G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextSize"] = 14;
 G2L["11"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["11"]["Size"] = UDim2.new(0, 102, 0, 22);
-G2L["11"]["BackgroundTransparency"] = 0.3;
-G2L["11"]["Name"] = [[Relax1]];
+G2L["11"]["PlaceholderText"] = [[Enter Music ID...]];
+G2L["11"]["Size"] = UDim2.new(0, 229, 0, 25);
+G2L["11"]["Position"] = UDim2.new(0.32896, 0, 0.22, 0);
 G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["Text"] = [[Relaxing Music]];
-G2L["11"]["Position"] = UDim2.new(0.13106, 0, 0.25, 0);
+G2L["11"]["Text"] = [[]];
+G2L["11"]["BackgroundTransparency"] = 0.3;
 
--- StarterGui.WhatHUB.SecretFrame.Relax1.UICorner
+-- StarterGui.WhatHUB.SecretFrame.TextBox.UICorner
 G2L["12"] = Instance.new("UICorner", G2L["11"]);
 
 
--- StarterGui.WhatHUB.SecretFrame.Relax1.PlayMusicOnClick
-G2L["13"] = Instance.new("LocalScript", G2L["11"]);
-G2L["13"]["Name"] = [[PlayMusicOnClick]];
-
--- StarterGui.WhatHUB.SecretFrame.Relax2
-G2L["14"] = Instance.new("TextButton", G2L["e"]);
-G2L["14"]["TextSize"] = 14;
-G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["14"]["Size"] = UDim2.new(0, 102, 0, 22);
-G2L["14"]["BackgroundTransparency"] = 0.3;
-G2L["14"]["Name"] = [[Relax2]];
-G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14"]["Text"] = [[Relaxing Music 2]];
-G2L["14"]["Position"] = UDim2.new(0.13106, 0, 0.59, 0);
-
--- StarterGui.WhatHUB.SecretFrame.Relax2.UICorner
-G2L["15"] = Instance.new("UICorner", G2L["14"]);
-
-
--- StarterGui.WhatHUB.SecretFrame.Relax2.PlayMusicOnClick
-G2L["16"] = Instance.new("LocalScript", G2L["14"]);
-G2L["16"]["Name"] = [[PlayMusicOnClick]];
-
--- StarterGui.WhatHUB.SecretFrame.TextBox
-G2L["17"] = Instance.new("TextBox", G2L["e"]);
-G2L["17"]["CursorPosition"] = -1;
-G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17"]["BorderSizePixel"] = 0;
-G2L["17"]["TextSize"] = 14;
-G2L["17"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["17"]["PlaceholderText"] = [[Enter Music ID...]];
-G2L["17"]["Size"] = UDim2.new(0, 229, 0, 25);
-G2L["17"]["Position"] = UDim2.new(0.36828, 0, 0.25, 0);
-G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17"]["Text"] = [[]];
-G2L["17"]["BackgroundTransparency"] = 0.3;
-
--- StarterGui.WhatHUB.SecretFrame.TextBox.UICorner
-G2L["18"] = Instance.new("UICorner", G2L["17"]);
-
-
 -- StarterGui.WhatHUB.SecretFrame.Play
-G2L["19"] = Instance.new("TextButton", G2L["e"]);
-G2L["19"]["TextSize"] = 14;
-G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["19"]["Size"] = UDim2.new(0, 102, 0, 22);
-G2L["19"]["BackgroundTransparency"] = 0.3;
-G2L["19"]["Name"] = [[Play]];
-G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["Text"] = [[Play]];
-G2L["19"]["Position"] = UDim2.new(0.37746, 0, 0.59, 0);
+G2L["13"] = Instance.new("TextButton", G2L["e"]);
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["13"]["Size"] = UDim2.new(0, 111, 0, 22);
+G2L["13"]["BackgroundTransparency"] = 0.3;
+G2L["13"]["Name"] = [[Play]];
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[Play]];
+G2L["13"]["Position"] = UDim2.new(0.32896, 0, 0.55, 0);
 
 -- StarterGui.WhatHUB.SecretFrame.Play.UICorner
-G2L["1a"] = Instance.new("UICorner", G2L["19"]);
+G2L["14"] = Instance.new("UICorner", G2L["13"]);
 
 
--- StarterGui.WhatHUB.SecretFrame.Play.PlayMusicScript
-G2L["1b"] = Instance.new("LocalScript", G2L["19"]);
-G2L["1b"]["Name"] = [[PlayMusicScript]];
+-- StarterGui.WhatHUB.SecretFrame.Play.PlaySoundOnClick
+G2L["15"] = Instance.new("LocalScript", G2L["13"]);
+G2L["15"]["Name"] = [[PlaySoundOnClick]];
 
 -- StarterGui.WhatHUB.SecretFrame.Stop
-G2L["1c"] = Instance.new("TextButton", G2L["e"]);
-G2L["1c"]["TextSize"] = 14;
-G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1c"]["Size"] = UDim2.new(0, 102, 0, 22);
-G2L["1c"]["BackgroundTransparency"] = 0.3;
-G2L["1c"]["Name"] = [[Stop]];
-G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["Text"] = [[Stop]];
-G2L["1c"]["Position"] = UDim2.new(0.53473, 0, 0.59, 0);
+G2L["16"] = Instance.new("TextButton", G2L["e"]);
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["16"]["Size"] = UDim2.new(0, 111, 0, 22);
+G2L["16"]["BackgroundTransparency"] = 0.3;
+G2L["16"]["Name"] = [[Stop]];
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[Stop]];
+G2L["16"]["Position"] = UDim2.new(0.48362, 0, 0.55, 0);
 
 -- StarterGui.WhatHUB.SecretFrame.Stop.UICorner
-G2L["1d"] = Instance.new("UICorner", G2L["1c"]);
+G2L["17"] = Instance.new("UICorner", G2L["16"]);
 
 
--- StarterGui.WhatHUB.SecretFrame.Stop.StopSoundOnClick
-G2L["1e"] = Instance.new("LocalScript", G2L["1c"]);
-G2L["1e"]["Name"] = [[StopSoundOnClick]];
+-- StarterGui.WhatHUB.SecretFrame.Stop.StopAndDestroySoundOnClick
+G2L["18"] = Instance.new("LocalScript", G2L["16"]);
+G2L["18"]["Name"] = [[StopAndDestroySoundOnClick]];
 
 -- StarterGui.WhatHUB.SecretFrame.TextLabel
-G2L["1f"] = Instance.new("TextLabel", G2L["e"]);
-G2L["1f"]["BorderSizePixel"] = 0;
-G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f"]["TextSize"] = 14;
-G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
-G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f"]["BackgroundTransparency"] = 1;
-G2L["1f"]["Size"] = UDim2.new(0, 200, 0, 25);
-G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f"]["Text"] = [[NOT FE]];
-G2L["1f"]["Position"] = UDim2.new(0.67386, 0, 0.16667, 0);
+G2L["19"] = Instance.new("TextLabel", G2L["e"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["BackgroundTransparency"] = 1;
+G2L["19"]["Size"] = UDim2.new(0, 200, 0, 25);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[NOT FE]];
+G2L["19"]["Position"] = UDim2.new(0.67386, 0, 0.16667, 0);
 
 -- StarterGui.WhatHUB.LocalScript
-G2L["20"] = Instance.new("LocalScript", G2L["1"]);
+G2L["1a"] = Instance.new("LocalScript", G2L["1"]);
 
 
 -- StarterGui.WhatHUB.LocalScript
-G2L["21"] = Instance.new("LocalScript", G2L["1"]);
+G2L["1b"] = Instance.new("LocalScript", G2L["1"]);
 
 
 -- StarterGui.WhatHUB.Frame.Script1SERVERSIDED.LocalScript
@@ -2913,11 +2881,11 @@ local script = G2L["6"];
 				attack = false
 				con5:disconnect()
 			end
-
-
-
+	
+	
+	
 			function attackfour()
-
+	
 				attack = true
 				so("http://www.roblox.com/asset/?id=1452040709", RightLeg, 3, 1)
 				WaveEffect(BrickColor.new("White"), root.CFrame * CFrame.new(0, -1, 0) * euler(0, math.random(-50, 50), 0), 1, 1, 1, 1, 0.5, 1, 0.05)
@@ -2938,9 +2906,9 @@ local script = G2L["6"];
 				velo.maxForce=Vector3.new(math.huge, math.huge, math.huge)
 				velo.Parent=root
 				game:GetService("Debris"):AddItem(velo,0.7)
-
-
-
+	
+	
+	
 				con5=hum.Touched:connect(function(hit)
 					if hit.Parent:FindFirstChildOfClass("Humanoid") ~= nil then
 						if attackdebounce == false then
@@ -4295,95 +4263,69 @@ local function C_9()
 	end)
 end;
 task.spawn(C_9);
--- StarterGui.WhatHUB.SecretFrame.Relax1.PlayMusicOnClick
-local function C_13()
-	local script = G2L["13"];
-	local textButton = script.Parent -- Reference to the TextButton instance
+-- StarterGui.WhatHUB.SecretFrame.Play.PlaySoundOnClick
+local function C_15()
+	local script = G2L["15"];
+	local playButton = script.Parent -- Reference to the TextButton instance
 
-	-- Function to play music
-	local function playMusic()
-		local music = game.SoundService:FindFirstChild("Relaxed Scene")
-		if music and music:IsA("Sound") then -- Check if the music instance exists and is a Sound
-			music:Play() -- Play the music
-		else
-			warn("Music not found or is not a Sound instance.")
-		end
+	-- Function to create and play sound
+	local function createAndPlaySound(soundId)
+		local soundInstance = Instance.new("Sound") -- Create a new Sound instance
+		soundInstance.SoundId = "rbxassetid://" .. soundId -- Set the sound ID
+		soundInstance.Parent = playButton -- Parent the sound to the button for now
+		soundInstance:Play() -- Play the sound
+
+		-- Optional: Remove the sound instance after it finishes playing
+		soundInstance.Ended:Connect(function()
+			soundInstance:Destroy()
+		end)
 	end
 
-	-- Connect the function to the button's click event
-	textButton.MouseButton1Click:Connect(playMusic)
-end;
-task.spawn(C_13);
--- StarterGui.WhatHUB.SecretFrame.Relax2.PlayMusicOnClick
-local function C_16()
-	local script = G2L["16"];
-	local textButton = script.Parent -- Reference to the TextButton instance
-
-	-- Function to play music
-	local function playMusic()
-		local music = game.SoundService:FindFirstChild("Relax")
-		if music and music:IsA("Sound") then -- Check if the music instance exists and is a Sound
-			music:Play() -- Play the music
-		else
-			warn("Music not found or is not a Sound instance.")
-		end
-	end
-
-	-- Connect the function to the button's click event
-	textButton.MouseButton1Click:Connect(playMusic)
-end;
-task.spawn(C_16);
--- StarterGui.WhatHUB.SecretFrame.Play.PlayMusicScript
-local function C_1b()
-	local script = G2L["1b"];
-	local playButton = script.Parent -- Reference to the Play button
-	local musicTextBox = playButton.Parent:FindFirstChild("TextBox") -- Attempt to find the MusicTextBox in the same parent as the Play button
-	local soundService = game:GetService("SoundService") -- Reference to the SoundService where the sound will be played
-
-	-- Function to play music
-	local function playMusic()
-		if musicTextBox and musicTextBox:IsA("TextBox") then -- Check if MusicTextBox exists and is a TextBox
-			local musicId = musicTextBox.Text -- Get the music ID from the TextBox
-			local success, result = pcall(function() return tonumber(musicId) end) -- Safely attempt to convert the music ID to a number
-
-			if success and result then -- If conversion is successful and result is not nil
-				local sound = Instance.new("Sound", soundService) -- Create a new Sound instance in the SoundService
-				sound.SoundId = "rbxassetid://" .. tostring(result) -- Set the SoundId to the music ID
-				sound:Play() -- Play the sound
-				sound.Ended:Connect(function() sound:Destroy() end) -- Destroy the sound instance once it has finished playing
+	-- Function to handle button click
+	local function onButtonClick()
+		-- Assuming there's a TextBox sibling to the button with the sound ID
+		local textBox = playButton.Parent:FindFirstChildWhichIsA("TextBox")
+		if textBox then
+			local soundId = textBox.Text
+			if soundId and soundId ~= "" then
+				createAndPlaySound(soundId)
 			else
-				warn("Invalid music ID") -- Warn if the music ID is not a valid number
+				warn("TextBox is empty or not found. Please enter a sound ID.")
 			end
 		else
-			warn("MusicTextBox not found or is not a TextBox") -- Warn if MusicTextBox does not exist or is not a TextBox
+			warn("TextBox not found. Make sure there's a TextBox sibling to the button.")
 		end
 	end
 
-	playButton.MouseButton1Click:Connect(playMusic) -- Connect the playMusic function to the button's click event
+	-- Connect the click event of the button to the handler function
+	playButton.MouseButton1Click:Connect(onButtonClick)
 end;
-task.spawn(C_1b);
--- StarterGui.WhatHUB.SecretFrame.Stop.StopSoundOnClick
-local function C_1e()
-	local script = G2L["1e"];
-	local button = script.Parent -- Reference to the button that was clicked
+task.spawn(C_15);
+-- StarterGui.WhatHUB.SecretFrame.Stop.StopAndDestroySoundOnClick
+local function C_18()
+	local script = G2L["18"];
+	local stopButton = script.Parent -- Reference to the button that will stop and destroy the sound
 
-	-- Function to stop all sounds in the SoundService
-	local function stopAllSounds()
-		local soundService = game:GetService("SoundService")
-		for _, sound in soundService:GetChildren() do
-			if sound:IsA("Sound") then
-				sound:Stop()
+	-- Function to stop and destroy the sound
+	local function stopAndDestroySound()
+		-- Navigate up to the Frame and then to the Play button to find the sound instance
+		local playButton = stopButton.Parent:FindFirstChild("Play")
+		if playButton then
+			local soundInstance = playButton:FindFirstChildOfClass("Sound")
+			if soundInstance then
+				soundInstance:Stop() -- Stop the sound
+				soundInstance:Destroy() -- Destroy the sound instance
 			end
 		end
 	end
 
-	-- Connect the button click event to the stopAllSounds function
-	button.MouseButton1Click:Connect(stopAllSounds)
+	-- Connect the function to the button's click event
+	stopButton.MouseButton1Click:Connect(stopAndDestroySound)
 end;
-task.spawn(C_1e);
+task.spawn(C_18);
 -- StarterGui.WhatHUB.LocalScript
-local function C_20()
-	local script = G2L["20"];
+local function C_1a()
+	local script = G2L["1a"];
 	local SGui = script.Parent
 	local Frame = SGui:WaitForChild("SecretFrame")
 	local Button = SGui.Frame:WaitForChild("OpenMusic")
@@ -4392,10 +4334,10 @@ local function C_20()
 		Frame.Visible = not Frame.Visible
 	end)
 end;
-task.spawn(C_20);
+task.spawn(C_1a);
 -- StarterGui.WhatHUB.LocalScript
-local function C_21()
-	local script = G2L["21"];
+local function C_1b()
+	local script = G2L["1b"];
 	local SGui = script.Parent
 	local Frame = SGui:WaitForChild("Frame")
 	local Button = SGui:WaitForChild("ImageButton")
@@ -4404,6 +4346,6 @@ local function C_21()
 		Frame.Visible = not Frame.Visible
 	end)
 end;
-task.spawn(C_21);
+task.spawn(C_1b);
 
 return G2L["1"], require;
