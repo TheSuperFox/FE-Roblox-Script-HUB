@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 56 | Scripts: 12 | Modules: 0
+-- Instances: 52 | Scripts: 10 | Modules: 0
 local G2L = {};
 
 -- StarterGui.DragonHub
@@ -39,420 +39,404 @@ G2L["4"] = Instance.new("LocalScript", G2L["1"]);
 G2L["5"] = Instance.new("LocalScript", G2L["1"]);
 
 
--- StarterGui.DragonHub.LocalScript
-G2L["6"] = Instance.new("LocalScript", G2L["1"]);
-
-
--- StarterGui.DragonHub.LocalScript
-G2L["7"] = Instance.new("LocalScript", G2L["1"]);
-
-
--- StarterGui.DragonHub.Holding
-G2L["8"] = Instance.new("BoolValue", G2L["1"]);
-G2L["8"]["Name"] = [[Holding]];
-
--- StarterGui.DragonHub.Holding
-G2L["9"] = Instance.new("BoolValue", G2L["1"]);
-G2L["9"]["Name"] = [[Holding]];
-
--- StarterGui.DragonHub.LocalScript
-G2L["a"] = Instance.new("LocalScript", G2L["1"]);
-
-
 -- StarterGui.DragonHub.Frame
-G2L["b"] = Instance.new("Frame", G2L["1"]);
-G2L["b"]["Visible"] = false;
-G2L["b"]["BorderSizePixel"] = 0;
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["Size"] = UDim2.new(0, 766, 0, 344);
-G2L["b"]["Position"] = UDim2.new(0.194, 0, 0.3, 0);
-G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["BackgroundTransparency"] = 0.5;
+G2L["6"] = Instance.new("Frame", G2L["1"]);
+G2L["6"]["Visible"] = false;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Size"] = UDim2.new(0, 766, 0, 344);
+G2L["6"]["Position"] = UDim2.new(0.194, 0, 0.3, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["BackgroundTransparency"] = 0.5;
 
 -- StarterGui.DragonHub.Frame.UICorner
-G2L["c"] = Instance.new("UICorner", G2L["b"]);
+G2L["7"] = Instance.new("UICorner", G2L["6"]);
 
 
 -- StarterGui.DragonHub.Frame.ScrollingFrame
-G2L["d"] = Instance.new("ScrollingFrame", G2L["b"]);
-G2L["d"]["Active"] = true;
-G2L["d"]["BorderSizePixel"] = 0;
-G2L["d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["Size"] = UDim2.new(0, 166, 0, 334);
-G2L["d"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["Position"] = UDim2.new(0.78227, 0, 0.02825, 0);
-G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["BackgroundTransparency"] = 0.5;
+G2L["8"] = Instance.new("ScrollingFrame", G2L["6"]);
+G2L["8"]["Active"] = true;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Size"] = UDim2.new(0, 166, 0, 334);
+G2L["8"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Position"] = UDim2.new(0.78227, 0, 0.02825, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["BackgroundTransparency"] = 0.5;
 
 -- StarterGui.DragonHub.Frame.ScrollingFrame.UICorner
-G2L["e"] = Instance.new("UICorner", G2L["d"]);
+G2L["9"] = Instance.new("UICorner", G2L["8"]);
 
 
 -- StarterGui.DragonHub.Frame.ScrollingFrame.OpenMusic
-G2L["f"] = Instance.new("TextButton", G2L["d"]);
-G2L["f"]["BorderSizePixel"] = 0;
-G2L["f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["TextSize"] = 14;
-G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
-G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["f"]["Size"] = UDim2.new(0, 117, 0, 23);
-G2L["f"]["Name"] = [[OpenMusic]];
-G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["Text"] = [[Music Player In GUI]];
-G2L["f"]["Position"] = UDim2.new(0.14827, 0, 0.06769, 0);
+G2L["a"] = Instance.new("TextButton", G2L["8"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a"]["Size"] = UDim2.new(0, 117, 0, 23);
+G2L["a"]["Name"] = [[OpenMusic]];
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[Music Player In GUI]];
+G2L["a"]["Position"] = UDim2.new(0.14827, 0, 0.06769, 0);
 
 -- StarterGui.DragonHub.Frame.ScrollingFrame.OpenMusic.UICorner
-G2L["10"] = Instance.new("UICorner", G2L["f"]);
+G2L["b"] = Instance.new("UICorner", G2L["a"]);
 
 
 -- StarterGui.DragonHub.Frame.ScrollingFrame.TextLabel
-G2L["11"] = Instance.new("TextLabel", G2L["d"]);
-G2L["11"]["BorderSizePixel"] = 0;
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["TextSize"] = 14;
-G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["BackgroundTransparency"] = 1;
-G2L["11"]["Size"] = UDim2.new(0, 167, 0, 19);
-G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["Text"] = [[Reedy HUB Features]];
-G2L["11"]["Position"] = UDim2.new(0, 0, 0.02035, 0);
+G2L["c"] = Instance.new("TextLabel", G2L["8"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["BackgroundTransparency"] = 1;
+G2L["c"]["Size"] = UDim2.new(0, 167, 0, 19);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[Reedy HUB Features]];
+G2L["c"]["Position"] = UDim2.new(0, 0, 0.02035, 0);
 
 -- StarterGui.DragonHub.Frame.ScrollingFrame.TextLabel
-G2L["12"] = Instance.new("TextLabel", G2L["d"]);
-G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["TextSize"] = 14;
-G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["BackgroundTransparency"] = 1;
-G2L["12"]["Size"] = UDim2.new(0, 167, 0, 19);
-G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Text"] = [[Reanimate]];
-G2L["12"]["Position"] = UDim2.new(-0.00599, 0, 0.10068, 0);
+G2L["d"] = Instance.new("TextLabel", G2L["8"]);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["Size"] = UDim2.new(0, 167, 0, 19);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[Reanimate]];
+G2L["d"]["Position"] = UDim2.new(-0.00599, 0, 0.10068, 0);
 
 -- StarterGui.DragonHub.Frame.ScrollingFrame.Script1SERVERSIDED
-G2L["13"] = Instance.new("TextButton", G2L["d"]);
-G2L["13"]["BorderSizePixel"] = 0;
-G2L["13"]["TextSize"] = 14;
-G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
-G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["13"]["Size"] = UDim2.new(0, 128, 0, 26);
-G2L["13"]["Name"] = [[Script1SERVERSIDED]];
-G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["Text"] = [[FE Gale Fighter]];
-G2L["13"]["Position"] = UDim2.new(0.10955, 0, 0.13689, 0);
+G2L["e"] = Instance.new("TextButton", G2L["8"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0, 128, 0, 26);
+G2L["e"]["Name"] = [[Script1SERVERSIDED]];
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[FE Gale Fighter]];
+G2L["e"]["Position"] = UDim2.new(0.10955, 0, 0.13689, 0);
 
 -- StarterGui.DragonHub.Frame.ScrollingFrame.Script1SERVERSIDED.UICorner
-G2L["14"] = Instance.new("UICorner", G2L["13"]);
+G2L["f"] = Instance.new("UICorner", G2L["e"]);
 
 
 -- StarterGui.DragonHub.Frame.ScrollingFrame.Script1SERVERSIDED.LocalScript
-G2L["15"] = Instance.new("LocalScript", G2L["13"]);
+G2L["10"] = Instance.new("LocalScript", G2L["e"]);
 
 
 -- StarterGui.DragonHub.Frame.Script2JUMPPOWERCHANGER
-G2L["16"] = Instance.new("TextButton", G2L["b"]);
-G2L["16"]["BorderSizePixel"] = 0;
-G2L["16"]["TextSize"] = 14;
-G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
-G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["16"]["Size"] = UDim2.new(0, 185, 0, 26);
-G2L["16"]["Name"] = [[Script2JUMPPOWERCHANGER]];
-G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["Text"] = [[JumpPowerGUI]];
-G2L["16"]["Position"] = UDim2.new(0.03651, 0, 0.39266, 0);
+G2L["11"] = Instance.new("TextButton", G2L["6"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["11"]["Size"] = UDim2.new(0, 185, 0, 26);
+G2L["11"]["Name"] = [[Script2JUMPPOWERCHANGER]];
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[JumpPowerGUI]];
+G2L["11"]["Position"] = UDim2.new(0.03651, 0, 0.39266, 0);
 
 -- StarterGui.DragonHub.Frame.Script2JUMPPOWERCHANGER.UICorner
-G2L["17"] = Instance.new("UICorner", G2L["16"]);
+G2L["12"] = Instance.new("UICorner", G2L["11"]);
 
 
 -- StarterGui.DragonHub.Frame.Script2JUMPPOWERCHANGER.LocalScript
-G2L["18"] = Instance.new("LocalScript", G2L["16"]);
+G2L["13"] = Instance.new("LocalScript", G2L["11"]);
 
 
 -- StarterGui.DragonHub.Frame.Script2SPEEDCHANGER
-G2L["19"] = Instance.new("TextButton", G2L["b"]);
-G2L["19"]["BorderSizePixel"] = 0;
-G2L["19"]["TextSize"] = 14;
-G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
-G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["19"]["Size"] = UDim2.new(0, 185, 0, 26);
-G2L["19"]["Name"] = [[Script2SPEEDCHANGER]];
-G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["Text"] = [[Speed Changer GUI]];
-G2L["19"]["Position"] = UDim2.new(0.03651, 0, 0.27966, 0);
+G2L["14"] = Instance.new("TextButton", G2L["6"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["14"]["Size"] = UDim2.new(0, 185, 0, 26);
+G2L["14"]["Name"] = [[Script2SPEEDCHANGER]];
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[Speed Changer GUI]];
+G2L["14"]["Position"] = UDim2.new(0.03651, 0, 0.27966, 0);
 
 -- StarterGui.DragonHub.Frame.Script2SPEEDCHANGER.UICorner
-G2L["1a"] = Instance.new("UICorner", G2L["19"]);
+G2L["15"] = Instance.new("UICorner", G2L["14"]);
 
 
 -- StarterGui.DragonHub.Frame.Script2SPEEDCHANGER.LocalScript
-G2L["1b"] = Instance.new("LocalScript", G2L["19"]);
+G2L["16"] = Instance.new("LocalScript", G2L["14"]);
 
 
 -- StarterGui.DragonHub.Frame.Script4ANIM
-G2L["1c"] = Instance.new("TextButton", G2L["b"]);
-G2L["1c"]["BorderSizePixel"] = 0;
-G2L["1c"]["TextSize"] = 14;
-G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
-G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1c"]["Size"] = UDim2.new(0, 185, 0, 26);
-G2L["1c"]["Name"] = [[Script4ANIM]];
-G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["Text"] = [[Animation GUI]];
-G2L["1c"]["Position"] = UDim2.new(0.03651, 0, 0.60734, 0);
+G2L["17"] = Instance.new("TextButton", G2L["6"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["17"]["Size"] = UDim2.new(0, 185, 0, 26);
+G2L["17"]["Name"] = [[Script4ANIM]];
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[Animation GUI]];
+G2L["17"]["Position"] = UDim2.new(0.03651, 0, 0.60734, 0);
 
 -- StarterGui.DragonHub.Frame.Script4ANIM.UICorner
-G2L["1d"] = Instance.new("UICorner", G2L["1c"]);
+G2L["18"] = Instance.new("UICorner", G2L["17"]);
 
 
 -- StarterGui.DragonHub.Frame.Script4ANIM.LocalScript
-G2L["1e"] = Instance.new("LocalScript", G2L["1c"]);
+G2L["19"] = Instance.new("LocalScript", G2L["17"]);
 
 
 -- StarterGui.DragonHub.Frame.Script4Fly
-G2L["1f"] = Instance.new("TextButton", G2L["b"]);
-G2L["1f"]["BorderSizePixel"] = 0;
-G2L["1f"]["TextSize"] = 14;
-G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
-G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1f"]["Size"] = UDim2.new(0, 185, 0, 26);
-G2L["1f"]["Name"] = [[Script4Fly]];
-G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f"]["Text"] = [[Fly GUI]];
-G2L["1f"]["Position"] = UDim2.new(0.36767, 0, 0.26271, 0);
+G2L["1a"] = Instance.new("TextButton", G2L["6"]);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1a"]["Size"] = UDim2.new(0, 185, 0, 26);
+G2L["1a"]["Name"] = [[Script4Fly]];
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[Fly GUI]];
+G2L["1a"]["Position"] = UDim2.new(0.36767, 0, 0.26271, 0);
 
 -- StarterGui.DragonHub.Frame.Script4Fly.UICorner
-G2L["20"] = Instance.new("UICorner", G2L["1f"]);
+G2L["1b"] = Instance.new("UICorner", G2L["1a"]);
 
 
 -- StarterGui.DragonHub.Frame.Script4Fly.LocalScript
-G2L["21"] = Instance.new("LocalScript", G2L["1f"]);
+G2L["1c"] = Instance.new("LocalScript", G2L["1a"]);
 
 
 -- StarterGui.DragonHub.Frame.ImageLabel
-G2L["22"] = Instance.new("ImageLabel", G2L["b"]);
-G2L["22"]["BorderSizePixel"] = 0;
-G2L["22"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["22"]["Image"] = [[rbxassetid://760338038]];
-G2L["22"]["Size"] = UDim2.new(0, 41, 0, 38);
-G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["22"]["BackgroundTransparency"] = 0.5;
-G2L["22"]["Position"] = UDim2.new(0.02477, 0, 0.06011, 0);
+G2L["1d"] = Instance.new("ImageLabel", G2L["6"]);
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Image"] = [[rbxassetid://760338038]];
+G2L["1d"]["Size"] = UDim2.new(0, 41, 0, 38);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["BackgroundTransparency"] = 0.5;
+G2L["1d"]["Position"] = UDim2.new(0.02477, 0, 0.06011, 0);
 
 -- StarterGui.DragonHub.Frame.ImageLabel.UICorner
-G2L["23"] = Instance.new("UICorner", G2L["22"]);
-G2L["23"]["CornerRadius"] = UDim.new(1, 0);
+G2L["1e"] = Instance.new("UICorner", G2L["1d"]);
+G2L["1e"]["CornerRadius"] = UDim.new(1, 0);
 
 -- StarterGui.DragonHub.Frame.ImageLabel
-G2L["24"] = Instance.new("ImageLabel", G2L["b"]);
-G2L["24"]["BorderSizePixel"] = 0;
-G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24"]["Image"] = [[rbxassetid://760338038]];
-G2L["24"]["Size"] = UDim2.new(0, 105, 0, 102);
-G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["BackgroundTransparency"] = 1;
-G2L["24"]["Position"] = UDim2.new(0.63233, 0, 0.60611, 0);
+G2L["1f"] = Instance.new("ImageLabel", G2L["6"]);
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["Image"] = [[rbxassetid://760338038]];
+G2L["1f"]["Size"] = UDim2.new(0, 105, 0, 102);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["BackgroundTransparency"] = 1;
+G2L["1f"]["Position"] = UDim2.new(0.63233, 0, 0.60611, 0);
 
 -- StarterGui.DragonHub.Frame.TextLabel
-G2L["25"] = Instance.new("TextLabel", G2L["b"]);
-G2L["25"]["BorderSizePixel"] = 0;
-G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25"]["TextSize"] = 22;
-G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25"]["BackgroundTransparency"] = 1;
-G2L["25"]["Size"] = UDim2.new(0, 167, 0, 19);
-G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25"]["Text"] = [[Script By Owner]];
-G2L["25"]["Position"] = UDim2.new(0.04747, 0, 0.19439, 0);
+G2L["20"] = Instance.new("TextLabel", G2L["6"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["TextSize"] = 22;
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["BackgroundTransparency"] = 1;
+G2L["20"]["Size"] = UDim2.new(0, 167, 0, 19);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[Script By Owner]];
+G2L["20"]["Position"] = UDim2.new(0.04747, 0, 0.19439, 0);
 
 -- StarterGui.DragonHub.Frame.TextLabel
-G2L["26"] = Instance.new("TextLabel", G2L["b"]);
-G2L["26"]["BorderSizePixel"] = 0;
-G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["26"]["TextSize"] = 24;
-G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["26"]["BackgroundTransparency"] = 1;
-G2L["26"]["Size"] = UDim2.new(0, 200, 0, 27);
-G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26"]["Text"] = [[Others]];
-G2L["26"]["Position"] = UDim2.new(0.02477, 0, 0.5, 0);
+G2L["21"] = Instance.new("TextLabel", G2L["6"]);
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["TextSize"] = 24;
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["BackgroundTransparency"] = 1;
+G2L["21"]["Size"] = UDim2.new(0, 200, 0, 27);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[Others]];
+G2L["21"]["Position"] = UDim2.new(0.02477, 0, 0.5, 0);
 
 -- StarterGui.DragonHub.Frame.TextLabel
-G2L["27"] = Instance.new("TextLabel", G2L["b"]);
-G2L["27"]["BorderSizePixel"] = 0;
-G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27"]["TextSize"] = 24;
-G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27"]["BackgroundTransparency"] = 1;
-G2L["27"]["Size"] = UDim2.new(0, 200, 0, 27);
-G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["Text"] = [[Admin Commands]];
-G2L["27"]["Position"] = UDim2.new(0.37158, 0, 0.17232, 0);
+G2L["22"] = Instance.new("TextLabel", G2L["6"]);
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["TextSize"] = 24;
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["BackgroundTransparency"] = 1;
+G2L["22"]["Size"] = UDim2.new(0, 200, 0, 27);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[Admin Commands]];
+G2L["22"]["Position"] = UDim2.new(0.37158, 0, 0.17232, 0);
 
 -- StarterGui.DragonHub.Frame.TextLabel
-G2L["28"] = Instance.new("TextLabel", G2L["b"]);
-G2L["28"]["BorderSizePixel"] = 0;
-G2L["28"]["BackgroundColor3"] = Color3.fromRGB(0, 162, 14);
-G2L["28"]["TextSize"] = 22;
-G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["28"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28"]["Size"] = UDim2.new(0, 794, 0, 34);
-G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28"]["Text"] = [[DRAGON HUB]];
-G2L["28"]["Position"] = UDim2.new(-0.01565, 0, -0.0678, 0);
+G2L["23"] = Instance.new("TextLabel", G2L["6"]);
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(0, 162, 14);
+G2L["23"]["TextSize"] = 22;
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Size"] = UDim2.new(0, 794, 0, 34);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Text"] = [[DRAGON HUB]];
+G2L["23"]["Position"] = UDim2.new(-0.01565, 0, -0.0678, 0);
 
 -- StarterGui.DragonHub.Frame.TextLabel.UICorner
-G2L["29"] = Instance.new("UICorner", G2L["28"]);
+G2L["24"] = Instance.new("UICorner", G2L["23"]);
 
 
 -- StarterGui.DragonHub.Frame.Title
-G2L["2a"] = Instance.new("TextLabel", G2L["b"]);
-G2L["2a"]["BorderSizePixel"] = 0;
-G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(61, 157, 0);
-G2L["2a"]["TextSize"] = 14;
-G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2a"]["TextColor3"] = Color3.fromRGB(33, 139, 0);
-G2L["2a"]["BackgroundTransparency"] = 1;
-G2L["2a"]["Size"] = UDim2.new(0, 58, 0, 28);
-G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a"]["Text"] = [[Dragon]];
-G2L["2a"]["Name"] = [[Title]];
-G2L["2a"]["Position"] = UDim2.new(0.07902, 0, 0.0775, 0);
+G2L["25"] = Instance.new("TextLabel", G2L["6"]);
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(61, 157, 0);
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["25"]["TextColor3"] = Color3.fromRGB(33, 139, 0);
+G2L["25"]["BackgroundTransparency"] = 1;
+G2L["25"]["Size"] = UDim2.new(0, 58, 0, 28);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[Dragon]];
+G2L["25"]["Name"] = [[Title]];
+G2L["25"]["Position"] = UDim2.new(0.07902, 0, 0.0775, 0);
 
 -- StarterGui.DragonHub.Frame.Title
-G2L["2b"] = Instance.new("TextLabel", G2L["b"]);
-G2L["2b"]["BorderSizePixel"] = 0;
-G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(61, 157, 0);
-G2L["2b"]["TextSize"] = 14;
-G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b"]["BackgroundTransparency"] = 1;
-G2L["2b"]["Size"] = UDim2.new(0, 52, 0, 28);
-G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b"]["Text"] = [[HUB]];
-G2L["2b"]["Name"] = [[Title]];
-G2L["2b"]["Position"] = UDim2.new(0.13646, 0, 0.0804, 0);
+G2L["26"] = Instance.new("TextLabel", G2L["6"]);
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(61, 157, 0);
+G2L["26"]["TextSize"] = 14;
+G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["BackgroundTransparency"] = 1;
+G2L["26"]["Size"] = UDim2.new(0, 52, 0, 28);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Text"] = [[HUB]];
+G2L["26"]["Name"] = [[Title]];
+G2L["26"]["Position"] = UDim2.new(0.13646, 0, 0.0804, 0);
 
 -- StarterGui.DragonHub.Frame.SecretFrame
-G2L["2c"] = Instance.new("Frame", G2L["b"]);
-G2L["2c"]["Visible"] = false;
-G2L["2c"]["BorderSizePixel"] = 0;
-G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c"]["Size"] = UDim2.new(0, 767, 0, 100);
-G2L["2c"]["Position"] = UDim2.new(0.00181, 0, 1.05501, 0);
-G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c"]["Name"] = [[SecretFrame]];
-G2L["2c"]["BackgroundTransparency"] = 0.5;
+G2L["27"] = Instance.new("Frame", G2L["6"]);
+G2L["27"]["Visible"] = false;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Size"] = UDim2.new(0, 767, 0, 100);
+G2L["27"]["Position"] = UDim2.new(0.00181, 0, 1.05501, 0);
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Name"] = [[SecretFrame]];
+G2L["27"]["BackgroundTransparency"] = 0.5;
 
 -- StarterGui.DragonHub.Frame.SecretFrame.ImageLabel
-G2L["2d"] = Instance.new("ImageLabel", G2L["2c"]);
-G2L["2d"]["BorderSizePixel"] = 0;
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["Image"] = [[rbxassetid://760338038]];
-G2L["2d"]["Size"] = UDim2.new(0, 103, 0, 100);
-G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["BackgroundTransparency"] = 1;
+G2L["28"] = Instance.new("ImageLabel", G2L["27"]);
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["Image"] = [[rbxassetid://760338038]];
+G2L["28"]["Size"] = UDim2.new(0, 103, 0, 100);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.DragonHub.Frame.SecretFrame.TextBox
-G2L["2e"] = Instance.new("TextBox", G2L["2c"]);
-G2L["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2e"]["BorderSizePixel"] = 0;
-G2L["2e"]["TextSize"] = 14;
-G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2e"]["PlaceholderText"] = [[Enter Music ID...]];
-G2L["2e"]["Size"] = UDim2.new(0, 229, 0, 25);
-G2L["2e"]["Position"] = UDim2.new(0.32896, 0, 0.22, 0);
-G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2e"]["Text"] = [[]];
-G2L["2e"]["BackgroundTransparency"] = 0.3;
+G2L["29"] = Instance.new("TextBox", G2L["27"]);
+G2L["29"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["TextSize"] = 14;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["29"]["PlaceholderText"] = [[Enter Music ID...]];
+G2L["29"]["Size"] = UDim2.new(0, 229, 0, 25);
+G2L["29"]["Position"] = UDim2.new(0.32896, 0, 0.22, 0);
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Text"] = [[]];
+G2L["29"]["BackgroundTransparency"] = 0.3;
 
 -- StarterGui.DragonHub.Frame.SecretFrame.TextBox.UICorner
-G2L["2f"] = Instance.new("UICorner", G2L["2e"]);
+G2L["2a"] = Instance.new("UICorner", G2L["29"]);
 
 
 -- StarterGui.DragonHub.Frame.SecretFrame.Play
-G2L["30"] = Instance.new("TextButton", G2L["2c"]);
-G2L["30"]["TextSize"] = 14;
-G2L["30"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["30"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["30"]["Size"] = UDim2.new(0, 111, 0, 22);
-G2L["30"]["BackgroundTransparency"] = 0.3;
-G2L["30"]["Name"] = [[Play]];
-G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["Text"] = [[Play]];
-G2L["30"]["Position"] = UDim2.new(0.32896, 0, 0.55, 0);
+G2L["2b"] = Instance.new("TextButton", G2L["27"]);
+G2L["2b"]["TextSize"] = 14;
+G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2b"]["Size"] = UDim2.new(0, 111, 0, 22);
+G2L["2b"]["BackgroundTransparency"] = 0.3;
+G2L["2b"]["Name"] = [[Play]];
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[Play]];
+G2L["2b"]["Position"] = UDim2.new(0.32896, 0, 0.55, 0);
 
 -- StarterGui.DragonHub.Frame.SecretFrame.Play.UICorner
-G2L["31"] = Instance.new("UICorner", G2L["30"]);
+G2L["2c"] = Instance.new("UICorner", G2L["2b"]);
 
 
 -- StarterGui.DragonHub.Frame.SecretFrame.Play.PlaySoundOnClick
-G2L["32"] = Instance.new("LocalScript", G2L["30"]);
-G2L["32"]["Name"] = [[PlaySoundOnClick]];
+G2L["2d"] = Instance.new("LocalScript", G2L["2b"]);
+G2L["2d"]["Name"] = [[PlaySoundOnClick]];
 
 -- StarterGui.DragonHub.Frame.SecretFrame.Stop
-G2L["33"] = Instance.new("TextButton", G2L["2c"]);
-G2L["33"]["TextSize"] = 14;
-G2L["33"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["33"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["33"]["Size"] = UDim2.new(0, 111, 0, 22);
-G2L["33"]["BackgroundTransparency"] = 0.3;
-G2L["33"]["Name"] = [[Stop]];
-G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["33"]["Text"] = [[Stop]];
-G2L["33"]["Position"] = UDim2.new(0.48362, 0, 0.55, 0);
+G2L["2e"] = Instance.new("TextButton", G2L["27"]);
+G2L["2e"]["TextSize"] = 14;
+G2L["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2e"]["Size"] = UDim2.new(0, 111, 0, 22);
+G2L["2e"]["BackgroundTransparency"] = 0.3;
+G2L["2e"]["Name"] = [[Stop]];
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[Stop]];
+G2L["2e"]["Position"] = UDim2.new(0.48362, 0, 0.55, 0);
 
 -- StarterGui.DragonHub.Frame.SecretFrame.Stop.UICorner
-G2L["34"] = Instance.new("UICorner", G2L["33"]);
+G2L["2f"] = Instance.new("UICorner", G2L["2e"]);
 
 
 -- StarterGui.DragonHub.Frame.SecretFrame.Stop.StopAndDestroySoundOnClick
-G2L["35"] = Instance.new("LocalScript", G2L["33"]);
-G2L["35"]["Name"] = [[StopAndDestroySoundOnClick]];
+G2L["30"] = Instance.new("LocalScript", G2L["2e"]);
+G2L["30"]["Name"] = [[StopAndDestroySoundOnClick]];
 
 -- StarterGui.DragonHub.Frame.SecretFrame.TextLabel
-G2L["36"] = Instance.new("TextLabel", G2L["2c"]);
-G2L["36"]["BorderSizePixel"] = 0;
-G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["36"]["TextSize"] = 14;
-G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
-G2L["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["36"]["BackgroundTransparency"] = 1;
-G2L["36"]["Size"] = UDim2.new(0, 85, 0, 25);
-G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36"]["Text"] = [[NOT FE]];
-G2L["36"]["Position"] = UDim2.new(0.8616, 0, 0.21667, 0);
+G2L["31"] = Instance.new("TextLabel", G2L["27"]);
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["TextSize"] = 14;
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["BackgroundTransparency"] = 1;
+G2L["31"]["Size"] = UDim2.new(0, 85, 0, 25);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[NOT FE]];
+G2L["31"]["Position"] = UDim2.new(0.8616, 0, 0.21667, 0);
 
 -- StarterGui.DragonHub.Frame.SecretFrame.UICorner
-G2L["37"] = Instance.new("UICorner", G2L["2c"]);
+G2L["32"] = Instance.new("UICorner", G2L["27"]);
 
 
 -- StarterGui.DragonHub.Frame.TextLabel
-G2L["38"] = Instance.new("TextLabel", G2L["b"]);
-G2L["38"]["BorderSizePixel"] = 0;
-G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["38"]["TextSize"] = 14;
-G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["38"]["BackgroundTransparency"] = 1;
-G2L["38"]["Size"] = UDim2.new(0, 85, 0, 19);
-G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["38"]["Text"] = [[Version 0.4]];
-G2L["38"]["Position"] = UDim2.new(0.87623, 0, 0.92207, 0);
+G2L["33"] = Instance.new("TextLabel", G2L["6"]);
+G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["33"]["TextSize"] = 14;
+G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["33"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["33"]["BackgroundTransparency"] = 1;
+G2L["33"]["Size"] = UDim2.new(0, 85, 0, 19);
+G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["Text"] = [[Version 0.4]];
+G2L["33"]["Position"] = UDim2.new(0.87623, 0, 0.92207, 0);
+
+-- StarterGui.DragonHub.Frame.DragGUISystem
+G2L["34"] = Instance.new("LocalScript", G2L["6"]);
+G2L["34"]["Name"] = [[DragGUISystem]];
 
 -- StarterGui.DragonHub.LocalScript
 local function C_4()
@@ -478,57 +462,9 @@ local script = G2L["5"];
 	end)
 end;
 task.spawn(C_5);
--- StarterGui.DragonHub.LocalScript
-local function C_6()
-local script = G2L["6"];
-	
-end;
-task.spawn(C_6);
--- StarterGui.DragonHub.LocalScript
-local function C_7()
-local script = G2L["7"];
-	local player = game.Players.LocalPlayer
-	local mouse = player:GetMouse()
-	
-	mouse.Button1Down:Connect(function()
-		script.Parent.Holding.Value = true
-	end)
-	
-	mouse.Button1Up:Connect(function()
-		script.Parent.Holding.Value = false
-	end)
-	
-	mouse.Move:Connect(function()
-		if script.Parent.Holding.Value == true then
-			script.Parent.Frame.Position = UDim2.new(0,mouse.X,0,mouse.Y)
-		end
-	end)
-end;
-task.spawn(C_7);
--- StarterGui.DragonHub.LocalScript
-local function C_a()
-local script = G2L["a"];
-	local player = game.Players.LocalPlayer
-	local mouse = player:GetMouse()
-	
-	mouse.Button1Down:Connect(function()
-		script.Parent.Holding.Value = true
-	end)
-	
-	mouse.Button1Up:Connect(function()
-		script.Parent.Holding.Value = false
-	end)
-	
-	mouse.Move:Connect(function()
-		if script.Parent.Holding.Value == true then
-			script.Parent.Helper.Position = UDim2.new(0,mouse.X,0,mouse.Y)
-		end
-	end)
-end;
-task.spawn(C_a);
 -- StarterGui.DragonHub.Frame.ScrollingFrame.Script1SERVERSIDED.LocalScript
-local function C_15()
-local script = G2L["15"];
+local function C_10()
+local script = G2L["10"];
 	script.Parent.MouseButton1Click:Connect(function()
 		--[[
 	made by sammyc and loadlua
@@ -4214,18 +4150,18 @@ local script = G2L["15"];
 		LoadAllAnimations()
 	end)
 end;
-task.spawn(C_15);
+task.spawn(C_10);
 -- StarterGui.DragonHub.Frame.Script2JUMPPOWERCHANGER.LocalScript
-local function C_18()
-	local script = G2L["18"];
+local function C_13()
+	local script = G2L["13"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/TheSuperFox/FE-jumppower-GUI/main/jUMPPOWER"))();
 	end)
 end;
-task.spawn(C_18);
+task.spawn(C_13);
 -- StarterGui.DragonHub.Frame.Script2SPEEDCHANGER.LocalScript
-local function C_1b()
-	local script = G2L["1b"];
+local function C_16()
+	local script = G2L["16"];
 	script.Parent.MouseButton1Click:Connect(function()
 		--[=[
 	    ██████╗░██╗░░░██╗  ███╗░░░███╗██████╗░░██╗░░░░░░░██╗░█████╗░████████╗░█████╗░
@@ -4574,26 +4510,26 @@ local function C_1b()
 		return G2L["1"], require;
 	end)
 end;
-task.spawn(C_1b);
+task.spawn(C_16);
 -- StarterGui.DragonHub.Frame.Script4ANIM.LocalScript
-local function C_1e()
-	local script = G2L["1e"];
+local function C_19()
+	local script = G2L["19"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://gist.githubusercontent.com/MelonsStuff/f018928d2f010789a150b4924e279b16/raw/8de399eb9cbccbde430fcd37270cd4ff171f8b8e/AnimationGUI.txt"))()
 	end)
 end;
-task.spawn(C_1e);
+task.spawn(C_19);
 -- StarterGui.DragonHub.Frame.Script4Fly.LocalScript
-local function C_21()
-	local script = G2L["21"];
+local function C_1c()
+	local script = G2L["1c"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 	end)
 end;
-task.spawn(C_21);
+task.spawn(C_1c);
 -- StarterGui.DragonHub.Frame.SecretFrame.Play.PlaySoundOnClick
-local function C_32()
-	local script = G2L["32"];
+local function C_2d()
+	local script = G2L["2d"];
 	local playButton = script.Parent -- Reference to the TextButton instance
 
 	-- Function to create and play sound
@@ -4628,10 +4564,10 @@ local function C_32()
 	-- Connect the click event of the button to the handler function
 	playButton.MouseButton1Click:Connect(onButtonClick)
 end;
-task.spawn(C_32);
+task.spawn(C_2d);
 -- StarterGui.DragonHub.Frame.SecretFrame.Stop.StopAndDestroySoundOnClick
-local function C_35()
-	local script = G2L["35"];
+local function C_30()
+	local script = G2L["30"];
 	local stopButton = script.Parent -- Reference to the button that will stop and destroy the sound
 
 	-- Function to stop and destroy the sound
@@ -4650,6 +4586,45 @@ local function C_35()
 	-- Connect the function to the button's click event
 	stopButton.MouseButton1Click:Connect(stopAndDestroySound)
 end;
-task.spawn(C_35);
+task.spawn(C_30);
+-- StarterGui.DragonHub.Frame.DragGUISystem
+local function C_34()
+	local script = G2L["34"];
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end;
+task.spawn(C_34);
 
 return G2L["1"], require;
